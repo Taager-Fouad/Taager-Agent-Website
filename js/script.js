@@ -36,7 +36,8 @@
       "https://translate.google.com/?sl=ar&tl=en&op=translate",
       "https://www.google.com/maps?authuser=0",
       "https://starship.taager.com/",
-      "https://script.google.com/macros/s/AKfycbxI3igLlwr6hLcaby8sGx3jpg1gxfRwad4Nf2OcWXDCKP4vUF6TgpaBKsme0HsIRmM9/exec"
+      "https://script.google.com/macros/s/AKfycbxI3igLlwr6hLcaby8sGx3jpg1gxfRwad4Nf2OcWXDCKP4vUF6TgpaBKsme0HsIRmM9/exec",
+      "https://iam.cloud.unifonic.com/auth/realms/unifonic-cloud/protocol/openid-connect/auth?state=3735867893de95fa4f733ba829cb382f&scope=profile%20email%20openid&response_type=code&approval_prompt=auto&redirect_uri=https://console-api.cloud.unifonic.com/iam-login&client_id=unifonic-cloud&expiresAfter=1760452183"
     ];
 
     const countries = {
