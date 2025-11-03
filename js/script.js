@@ -80,7 +80,7 @@
             { name: "Dukkank", link: "https://dukkank.com/" },
             { name: "Taager", link: "https://taager.com/eg/home" },
             { name: "Starship", link: "https://starship.taager.com/" },
-            { name: "Realtime & Breaks", link: "https://script.google.com/macros/s/AKfycbxI3igLlwr6hLcaby8sGx3jpg1gxfRwad4Nf2OcWXDCKP4vUF6TgpaBKsme0HsIRmM9/exec" },
+            { name: "Realtime & Breaks", link: "https://taager-fouad.github.io/EGY-Realtime-Breaks-View/" },
             { name: "ChatGPT", link: "https://chatgpt.com/" },
             { name: "Mail", link: "https://mail.outhyre.co/" },
             { name: "WhatsApp", link: "https://web.whatsapp.com/" },
