@@ -80,6 +80,7 @@
           links: [
             { name: "Dukkank", link: "https://dukkank.com/" },
             { name: "Realtime & Breaks", link: "https://taager-fouad.github.io/EGY-Realtime-Breaks-View/" },
+            { name: "Workers by Date", link: "https://taager-fouad.github.io/Workers-by-Date/" },
             { name: "Taager", link: "https://taager.com/eg/home" },
             { name: "Starship", link: "https://starship.taager.com/" },
             { name: "ChatGPT", link: "https://chatgpt.com/" },
