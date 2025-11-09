@@ -64,7 +64,7 @@
         {
           name: "QA Sheets",
           links: [
-            { name: "Mostafa Team", link: "https://docs.google.com/spreadsheets/d/11IMZaf2pseCqW5tH4SW3vkm8AzDGrcwmRSFCBIebIBc/edit?pli=1&gid=0#gid=0" },
+            { name: "Mostafa Team", link: "https://docs.google.com/spreadsheets/d/192EgQlqJvX0BQK5pa6Ooq_wFNX4YgDq5rKAUJBQ0nUM/edit?gid=871874823#gid=871874823" },
             { name: "Yara Team", link: "https://docs.google.com/spreadsheets/d/1ytEzomjDxs2HshUTIWnmPdT6YfMFYBF2lrggVlsnL6Q/edit?gid=0#gid=0" },
             { name: "Hawazen Team", link: "https://docs.google.com/spreadsheets/d/1DoEa55xkXRHoZpjklUoYE6UdgYt7DK2BgehFQ9ahiKk/edit?gid=0#gid=0" },
           ]
