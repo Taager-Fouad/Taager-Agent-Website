@@ -49,6 +49,7 @@
             { name: "Oct MTD EGY Performance", link: "https://docs.google.com/spreadsheets/d/1uZCDyoC83xkaaW5bfvDPtVBuhS39EBXf_ET4BFbzYX0/edit?pli=1&gid=0#gid=0" },
             { name: "Nov MTD EGY Performance", link: "https://docs.google.com/spreadsheets/d/1Tv1oJHtgtwj9tQO_LHDIfnfCiuAPztgjBNeW9rX2m5s/edit?gid=0#gid=0" },
             { name: "Discount Sheet", link: "https://docs.google.com/spreadsheets/d/1TzCg16ZrDn_xMYVAM6Z30O4WrXYNwA1a9JYl1j7D5Jo/edit?gid=10481039#gid=10481039" },
+            { name: "SKUs For Cross-Selling", link: "https://docs.google.com/spreadsheets/d/1irfsmbMPOsscWC53zIKKckSXhkOe4mRtgFFuPph93-Y/edit?gid=723690593#gid=723690593" },
             { name: "Upselling", link: "https://docs.google.com/spreadsheets/d/1Y8FQwslCwSkodZqwwoPa5zmT1Icn15jZO3hJ-AphMF4/edit?gid=400656243#gid=400656243" },
             { name: "Schedule EGY", link: "https://docs.google.com/spreadsheets/d/1hKdD1mH-6_FM35YRqrxfeaLoqn2fmlyKjxJ-TsvwDyY/edit?pli=1&gid=1118150853#gid=1118150853" },
             { name: "Total Inventory Counts EGY", link: "https://docs.google.com/spreadsheets/d/16JvfRl6AdX47DrxLFsTAkkbh6lsgwYafAFgVWxWRR3Q/edit?gid=0#gid=0" },
