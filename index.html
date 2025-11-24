@@ -1,106 +1,345 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-  <meta charset="UTF-8" />
-  <title>Taager Sheets</title>
-  <link rel="icon" href="assets/icons/ODF.png" type="icon">
-  <link rel="stylesheet" href="css/master.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taager Sheets</title>
+    <link rel="icon" href="assets/icons/ODF.png" type="image/png" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="loader" id="loader"></div>
 
-  <button class="menu-btn" id="menuBtn">☰</button>
-  <div class="loader" id="loader"></div>
-
-  <div class="sidebar" id="sidebar">
-    <img style="width: 200px; margin: 26px;" src="assets/taager-logo.png" alt="">
-    <select id="countrySelect" class="country-select">
-      <option value="egypt">EGY</option>
-      <option value="ksa">KSA</option>
-      <option value="iraq">IRAQ</option>
-      <option value="gcc">GCC</option>
-    </select>
-    <div class="category" id="homeBtn"><span>Home</span></div>
-    <div id="categoriesContainer"></div>
-  </div>
-
-  <div id="homePage" class="active">
-    <div style="text-align:center; margin-top:20px;">
-      <img src="assets/taager-logo.png" alt="Taager" style="width:180px; opacity:0.9;">
-      <h1 style="color:#00998f; margin-top:25px;">مرحبًا بك في Taager</h1>
+    <div class="sidebar" id="sidebar">
+      <img
+        style="width: 200px; margin: 26px"
+        src="assets/taager-logo.png"
+        alt=""
+      />
+      <select id="countrySelect" class="country-select">
+        <option value="egypt">EGY</option>
+        <option value="ksa">KSA</option>
+        <option value="iraq">IRAQ</option>
+        <option value="gcc">GCC</option>
+      </select>
+      <div class="category" id="homeBtn">
+        <span>Home</span>
+      </div>
+      <div id="categoriesContainer"></div>
     </div>
 
-    <div class="home-block">
-      <div class="home-block-header">Egypt<span class="arrow-down">▼</span></div>
-      <div class="home-block-content">
-        <p>رساله التأكيد</p>
-        <div class="text-container">
-  <span class="text-content">
-تم تأكيد طلب حضرتك ✅
-التوصيل خلال يومين للقاهرة والجيزة والإسكندرية ومحافظات بحري، و3 أيام لوجه قبلي.
-الطلب عليه ضمان 14 يوم ضد عيوب الصناعة أو الشحن.
-مواعيد عمل المندوب من 9 صباحًا إلى 6 مساءً.
+    <div id="homePage" class="active">
+      <div style="text-align: center; margin-top: 20px">
+        <img
+          src="assets/taager-logo.png"
+          alt="Taager"
+          style="width: 180px; opacity: 0.9"
+        />
+        <h1 style="color: #00998f; margin-top: 25px">مرحبًا بك في Taager</h1>
+      </div>
 
-للاستبدال أو الاسترجاع: برجاء الدخول على الموقع التالي وتقديم الطلب، وسيتم الرد خلال 48 ساعة:
-🔗 https://www.jawdaonline.com/ 
+      <!-- Egypt Block -->
+      <div class="home-block">
+        <div class="home-block-header">
+          Egypt
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="home-block-content">
+          <p>رساله التأكيد</p>
+          <div class="text-container">
+            <span class="text-content">
+              تم تأكيد طلب حضرتك ✅ التوصيل خلال يومين للقاهرة والجيزة
+              والإسكندرية ومحافظات بحري، و3 أيام لوجه قبلي. الطلب عليه ضمان 14
+              يوم ضد عيوب الصناعة أو الشحن. مواعيد عمل المندوب من 9 صباحًا إلى 6
+              مساءً. للاستبدال أو الاسترجاع: برجاء الدخول على الموقع التالي
+              وتقديم الطلب، وسيتم الرد خلال 48 ساعة: 🔗
+              https://www.jawdaonline.com/ ❤️ اتشرفنا جدًا بثقتك، وسعداء إننا
+              بنتعامل مع حضرتك #جودة_بتفرق
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
 
-❤️ اتشرفنا جدًا بثقتك، وسعداء إننا بنتعامل مع حضرتك
-#جودة_بتفرق
-  </span>
-  <span class="copy-icon" onclick="copyText(this)">📋</span>
-  <span class="copy-message">تم النسخ!</span>
-</div>
-        
-        <p>لو العميل عاوز يعمل استبدال او استرجاع (After sale)</p>
-        <div class="text-container">
-  <span class="text-content">
-    للاستبدال أو الاسترجاع: برجاء الدخول على الموقع التالي وتقديم الطلب، وسيتم الرد خلال 48 ساعة:
-🔗 https://www.jawdaonline.com/ 
+          <p>لو العميل عاوز يعمل استبدال او استرجاع (After sale)</p>
+          <div class="text-container">
+            <span class="text-content">
+              للاستبدال أو الاسترجاع: برجاء الدخول على الموقع التالي وتقديم
+              الطلب، وسيتم الرد خلال 48 ساعة: 🔗 https://www.jawdaonline.com/ ❤️
+              اتشرفنا جدًا بثقتك، وسعداء إننا بنتعامل مع حضرتك #جودة_بتفرق
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
 
-❤️ اتشرفنا جدًا بثقتك، وسعداء إننا بنتعامل مع حضرتك
-#جودة_بتفرق
-  </span>
-  <span class="copy-icon" onclick="copyText(this)">📋</span>
-  <span class="copy-message">تم النسخ!</span>
-</div>
-        <p>دكانك</p>
-        <div class="text-container">
-  <span class="text-content">
-https://dukkank.com/
-  </span>
-  <span class="copy-icon" onclick="copyText(this)">📋</span>
-  <span class="copy-message">تم النسخ!</span>
-</div>
+          <p>دكانك</p>
+          <div class="text-container">
+            <span class="text-content"> https://dukkank.com/ </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WhatsApp Block -->
+      <div class="home-block">
+        <div class="home-block-header">
+          Whatsapp
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="home-block-content">
+          <p>اي عميل يسأل علي لون</p>
+          <div class="text-container">
+            <span class="text-content">
+              اللون عشوائي وغير موحد لو حضرتك عاوز لون معين اكتبه لحضرتك في
+              ملحوظه
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>اي عميل عايز فيديو</p>
+          <div class="text-container">
+            <span class="text-content">
+              ممكن حضرتك ترجع للاعلان لأن مش متوفر عندي فيديو
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>عنوان ريد زون</p>
+          <div class="text-container">
+            <span class="text-content">
+              مفيش توصيل ف العنوان دا ممكن عنوان اخر ؟
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>اي عميل عايز ياجل</p>
+          <div class="text-container">
+            <span class="text-content">
+              تم التاجيل الاوردر اسبوع وبعدها سوف يتم التواصل مع حضرتك
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو عميل عاوز يأكد و العنوان مش كامل</p>
+          <div class="text-container">
+            <span class="text-content">
+              يرجي توضيح العنوان بشكل كامل حتي يمكننا تأكيد الطلب؟
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>سؤال للعميل لو عملتله اللي عاوزه</p>
+          <div class="text-container">
+            <span class="text-content"> اي استفسار اخر ؟ </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو سألته اي استفسار اخر و قال شكرا</p>
+          <div class="text-container">
+            <span class="text-content">
+              .تحت امرك يا فندم اتشرفنا بخدمة حضرتك
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لما ترد ع سؤاله او يتأخر في الرد</p>
+          <div class="text-container">
+            <span class="text-content"> حضرتك حابب تاكد الاوردر؟ </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>الاستبدال أو الاسترجاع</p>
+          <div class="text-container">
+            <span class="text-content">
+              الاستبدال أو الاسترجاع: برجاء الدخول على الموقع التالي وتقديم
+              الطلب، وسيتم الرد خلال 48 ساعة: 🔗 https://www.jawdaonline.com/ ❤️
+              اتشرفنا جدًا بثقتك، وسعداء إننا بنتعامل مع حضرتك #جودة_بتفرق
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو هيلغي بسبب عشان مش معاه فلوس او مسافر</p>
+          <div class="text-container">
+            <span class="text-content">
+              تمام يافندم مفيش مشكلة تحب نأجل الطلب اسبوع عشان العرض ميروحش على
+              حضرتك ولا نلغيه تماما ؟
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو عاوز يلغلي اوردر مشحون</p>
+          <div class="text-container">
+            <span class="text-content">
+              لان تم التاكيد علي طلبك تقدر تلغي مع المندوب لان الطلب بشركه الشحن
+              ولا يمكن التعديل عليه شكراً لتفهمك
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لما ترد ع سؤاله او يتأخر في الرد</p>
+          <div class="text-container">
+            <span class="text-content"> حضرتك حابب تاكد الاوردر؟ </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو العميل سأل هو انا لازم ادفع دلوقتي</p>
+          <div class="text-container">
+            <span class="text-content">
+              بالنسبة لطريقة الدفع يا فندم، دي اختيارية ومش إجبارية تقدر تدفع
+              كاش مع المندوب 💵 وكمان تعاين المنتج قبل ما تستلمه 👀 عشان تكون
+              مطمّن 100% ✅
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو العميل سأل الاوردر هيجي امتى</p>
+          <div class="text-container">
+            <span class="text-content"> تم التاكيد هيوصل خلال 3 ايام </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو بعتله لينك الاستبدال و سأل تاني عاوز حد يتواصل معايا</p>
+          <div class="text-container">
+            <span class="text-content">
+              ممكن تسجل في اللينك وهيتم التواصل معك علي مدار اليوم
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو قال انا عاوز المندوب يكلمني قبل م يجي</p>
+          <div class="text-container">
+            <span class="text-content">
+              تمام بيتواصل مع حضرتك قبل ما يوصل بساعتين
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو بعد هندله بتسأله عاوز المنتج ولا ايه</p>
+          <div class="text-container">
+            <span class="text-content"> حضرتك مش حابب تستفيد بالمنتج ؟ </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو الاوردر بتاعه مشحون و هو بيسأل عليه</p>
+          <div class="text-container">
+            <span class="text-content">
+              هو موضح امامي ان الطلب مع شركة الشحن يافندم وهيوصل لحضرتك في اسرع
+              وقت ان شاء الله ولو في اي استفسار اخر تحت امر حضرتك
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو عاوز يلغي بسبب السعر</p>
+          <div class="text-container">
+            <span class="text-content">
+              ممكن اوفر لحضرتك خصم يكون السعر بعد الخصم
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو العميل لغى و قال مش عاوز المنتج</p>
+          <div class="text-container">
+            <span class="text-content">
+              اكيد حضرتك حجزت الاوردر عشان كنت مهتم بالمنتج واحنا هنا عشان نساعد
+              حضرتك قبل اي حاجة عشان كده ممكن نعمل لحضرتك خصم مميز لو في مشكلة
+              متعلقة بسعر المنتج كمان ممكن نأجل لحضرتك الطلبية لو الوقت مش مناسب
+              حاليا
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو قال انا مقدم ع طلب استرجاع</p>
+          <div class="text-container">
+            <span class="text-content">
+              حضرتك عملت طلب الاسترجاع امتي ؟ وهل لم يتم التواصل معك طوال الفترة
+              منذ تقديم الطلب سواء هاتفيا او واتساب ؟
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو داس ع الغاء الاوردر</p>
+          <div class="text-container">
+            <span class="text-content">
+              حضرتك كنت محتاج تأكد الاوردر حضرتك ضغطت الغاء حضرتك ممكن توضحلي
+              حابب تأكد الاوردر ولا تلغيه حتي يمكننا مساعدتك واذا كان هناك
+              استفسار يرجي توضيحه ؟
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+
+          <p>لو الاوردر كان في شركه الشحن و رجع</p>
+          <div class="text-container">
+            <span class="text-content">
+              هو موضح عندي علي السيستم ان شركة الشحن رجعت الاوردر بس مش مذكور
+              سبب ف هل حد كلم حضرتك ومستلتمش ولا محدش اتواصل مع حضرتك ؟
+            </span>
+            <span class="copy-icon" onclick="copyText(this)">📋</span>
+            <span class="copy-message">تم النسخ!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KSA Block -->
+      <div class="home-block">
+        <div class="home-block-header">
+          KSA
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="home-block-content">
+          <p>اكتب هنا المعلومات الخاصة بالبلوك الثاني.</p>
+        </div>
+      </div>
+
+      <!-- Iraq Block -->
+      <div class="home-block">
+        <div class="home-block-header">
+          Iraq
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="home-block-content">
+          <p>محتوى البلوك الثالث يظهر هنا.</p>
+        </div>
+      </div>
+
+      <!-- GCC Block -->
+      <div class="home-block">
+        <div class="home-block-header">
+          GCC
+          <span class="arrow-down">▼</span>
+        </div>
+        <div class="home-block-content">
+          <p>ضيف هنا أي محتوى أو روابط أو نصوص تخص البلوك الرابع.</p>
+        </div>
       </div>
     </div>
 
-    <div class="home-block">
-      <div class="home-block-header">KSA<span class="arrow-down">▼</span></div>
-      <div class="home-block-content">
-        <p>اكتب هنا المعلومات الخاصة بالبلوك الثاني.</p>
-      </div>
-    </div>
-
-    <div class="home-block">
-      <div class="home-block-header">Iraq<span class="arrow-down">▼</span></div>
-      <div class="home-block-content">
-        <p>محتوى البلوك الثالث يظهر هنا.</p>
-      </div>
-    </div>
-
-    <div class="home-block">
-      <div class="home-block-header">GCC<span class="arrow-down">▼</span></div>
-      <div class="home-block-content">
-        <p>ضيف هنا أي محتوى أو روابط أو نصوص تخص البلوك الرابع.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="iframes"></div>
+    <div id="iframes"></div>
 
     <!-- رقم الإصدار -->
-  <div class="version">v0.1.3</div>
+    <div class="version">v0.1.3</div>
 
-  <script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
